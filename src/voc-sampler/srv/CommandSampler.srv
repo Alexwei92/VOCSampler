@@ -1,0 +1,6 @@
+string COMMAND_MOTOR_START=s
+string COMMAND_MOTOR_STOP=r
+
+string command
+---
+bool success

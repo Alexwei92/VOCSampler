@@ -1,0 +1,11 @@
+<launch>
+    <arg name="serial_port" default="/dev/ttyACM0"/>
+    <arg name="serial_baudrate" default="115200"/>
+
+    <group ns="voc_sampler">
+        <node pkg="voc_sampler" type="sampler_commander.py" name="sampler_commander" output="screen">
+            <param name="port" type="string" value="$(arg serial_port)"/>
+            <param name="baud_rate" type="int" value="$(arg serial_baudrate)"/>
+        </node>
+    </group>
+</launch>
