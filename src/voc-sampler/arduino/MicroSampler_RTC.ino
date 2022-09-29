@@ -48,7 +48,6 @@ void setup ()
   delay(500);
 
   /* Motor Init */
-  TCCR3B = (TCCR3B & 0b11111000) | 0x01;
   pinMode(MOTORPWM_PIN, OUTPUT);
   StopMotor();
   Serial.println("Motor Initialized!");
